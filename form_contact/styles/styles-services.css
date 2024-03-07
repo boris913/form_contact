@@ -1,0 +1,255 @@
+/* Center services section */
+.services .row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.service {
+  background-color: #f8f9fa;
+  border: 5px solid #cccccc;
+  padding: 30px;
+  text-align: center;
+  margin-bottom: 30px;
+  width: 360px;
+  height: 300px;
+}
+
+.service i {
+  font-size: 40px;
+  margin-bottom: 20px;  
+  /* color: #0d6efd; */
+}
+  
+.service h2 {
+  font-size: 20px;
+  font-weight: 600;  
+  margin-bottom: 10px; 
+}
+
+/* .service p {
+  font-size: 16px;
+  color: #666;
+} */
+
+@media(min-width: 768px) {
+  .service {
+    height: 250px;
+  }
+}
+
+@media(max-width: 767px) {
+  .service {
+    margin-bottom: 30px;
+  }
+}
+/* Ajouter une couleur de fond pour les icônes dans les services :
+css
+Copy  */
+.service i {
+  background-color: #007bff;
+  color: #ffffff;
+  border-radius: 50%;
+  font-size: 36px;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+ /* Ajouter des ombres sur les services pour créer un effet de profondeur : 
+css
+Copy  */
+.service {
+  background-color: skyblue;
+  border: 3px solid #007bff;
+  padding: 20px;
+  margin-bottom: 30px;
+  margin-top: 10px;
+  text-align: center;
+  box-shadow: 0px 0px 10px rgba(19, 105, 204, 0.5);
+}
+/* Ajouter une animation de survol sur les services pour créer une interaction :
+Copy  */
+.service:hover {
+  transform: translateY(-10px);
+  transition: all 0.1s ease-in-out;
+}
+/* Modifier la couleur d'arrière-plan du bouton "En savoir plus" :
+Copy  */
+.service .btn-primary {
+  background-color: #ffffff;
+  color: #007bff;
+  border: 2px solid #007bff;
+}
+ /* Modifier la couleur du texte de la barre de navigation lorsqu'elle est survolée :
+Copy  */
+.navbar-nav .nav-link:hover {
+  color: #007bff;
+}
+ /* Ajouter une ombre sur la barre de navigation pour créer un effet de profondeur :
+apache
+Copy  */
+
+ /* Modifier la couleur de fond et de texte de la section "Nos services" :
+Copy  */
+.services {
+  background-color: #0A1C2A;
+  padding-top: 70px;
+}
+.services h2 {
+  color: #007bff;
+
+}
+/* Ajouter une bordure arrondie sur les cartes de témoignages :
+Copy  */
+.card {
+  border-radius: 10px;
+}
+/* Modifier la couleur de fond et de texte du pied de page :
+Copy  */
+/* footer {
+  background-color: #343a40;
+  color: #ffffff;
+  padding: 30px 0;
+} */
+/* -------------------------------------------------------------------------------------------------------------------------------
+/* Ajouter des ombres pour les icônes des services :
+Vous pouvez ajouter des ombres pour les icônes des services pour les faire ressortir du fond. Voici un exemple de code CSS pour ajouter une ombre à l'icône du premier service :
+
+Copy */
+.service:first-child .fas {
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+/* Ajouter des animations pour les titres et les textes des services :
+Vous pouvez ajouter des animations pour les titres et les textes des services pour les rendre plus dynamiques. Voici un exemple de code CSS pour ajouter une animation de zoom sur le titre du premier service :
+
+css
+Copy */
+.service:first-child h2 {
+	animation: zoom 0.2s ease-in-out;
+}
+
+@keyframes zoom {
+	0% { transform: scale(1); }
+	50% { transform: scale(1.2); }
+	100% { transform: scale(1); }
+}
+.banner {
+	padding: 100px 0;
+}
+
+.banner {
+	height: 500px;
+	background-size: cover;
+	background-position: center;
+	position: relative;
+}
+
+
+.banner h1 {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: #ccc;
+	font-size: 48px;
+	font-weight: bold;
+	text-align: center;
+} 
+
+.contact{
+  margin: 30px;
+    display: flex; /* Ajout de la propriété display: flex */
+	align-items: center; /* Centrer verticalement */
+	justify-content: center;
+}
+.contact a{
+  font-size: 1.2rem; /* Augmente la taille du texte */
+  padding: 12px 24px; /* Ajoute de l'espace autour du texte */
+}
+/*.service {
+   padding: 30px;
+  text-align: center;    
+  background-color: #fff;    
+  border: 1px solid #ddd; 
+  border-radius: 4px;
+  margin-bottom: 30px; 
+}
+
+.service i{ 
+  font-size: 50px;  
+  color: #2581DC;
+}
+
+.service h2{
+  font-family: 'Open Sans', sans-serif;       
+  /* font-size: 22px;   
+  font-weight: 600; 
+  margin-top: 10px; 
+  margin-bottom: 10px; 
+}*/
+
+.service p{
+  font-family: 'Roboto', sans-serif;
+
+}
+/* Largeur du bloc */
+@media(min-width: 992px){
+  .service {
+    width: 360px;
+    height: 300px;
+  }  
+}
+.service h2{   
+  font-size: 23px;   
+  font-weight: 200;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-decoration: underline;  /* Souligne le texte */
+}
+
+.service h2{  
+  text-decoration: none;    /* Supprime la soulignement */    
+  border-bottom: 3px solid #2581DC; /* Ajoute une bordure dessous */    
+  padding-bottom: 5px;   /* Espacement entre le texte et la bordure */  
+}
+@media (max-width: 767px) {
+  .banner {
+    text-align: center;
+  }
+}
+/* Styling for services section */
+.services {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.service {
+  border: 1px solid #007bff;
+  margin-bottom: 30px;
+  padding: 20px;
+}
+
+.service h2 {
+  font-weight: bold;
+  margin-top: 0;
+}
+
+.service p {
+  margin-bottom: 0;
+}
+
+/* Media queries for responsive design */
+@media (max-width: 767px) {
+  .service {
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width: 768px) {
+  .service {
+    margin-right: 20px;
+    margin-bottom: 20px;
+  }
+
+  .service:nth-child(3n+0) {
+    margin-right: 0;
+  }
+}

@@ -1,0 +1,150 @@
+.banner{
+	position: relative;
+	z-index: 0;
+  }
+  .contact{
+	  position: relative;
+	  z-index: 0;
+  }
+  .banner::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5); /* Couleur de fond semi-transparente */
+  }
+  
+  .banner h1 {
+	position: relative;
+	z-index: 1; /* Assurez-vous que le texte est au-dessus du calque */
+	color: #fff; /* Couleur du texte */
+  }
+
+body {
+	font-family: 'Roboto', Helvetica, Arial, Verdana, sans-serifRoboto, Helvetica, Arial, Verdana, sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
+	color: #fdfdfd;
+	background-color: #fdfdfd;
+}
+
+/* Style pour le footer
+
+footer {
+	background-color: #343a40;
+	color: #ffffff;
+	padding: 30px 0;
+}
+.footer-nav {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.footer-nav li {
+	display: inline-block;
+	margin-right: 20px;
+}
+.footer-nav li a {
+	color: #ffffff;
+}
+.footer-nav li a:hover {
+	color: #cccccc;
+} */
+a {
+	color: #007BFF;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #0056b3;
+	text-decoration: underline;
+}
+
+
+
+
+
+.banner h1 {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: #fff !important;
+	font-size: 30px;
+	font-weight: bold;
+	text-align: center;
+	/* z-index: 2; */
+	/* background-color: rgba(255, 255, 255, 0.7); */
+}
+
+.contact {
+	padding: 80px 0;
+}
+
+.contact h2 {
+	margin-bottom: 40px;
+	font-weight: bold;
+	text-align: center;
+	text-decoration: underline;
+	color: #007bff;
+}
+
+.form-group label {
+	font-weight: bold;
+	color: #007bff;
+	/* font-size: 30px !important; */
+}
+
+.btn-primary {
+	background-color: #0056b3;
+	border-color: #0056b3;
+	margin-bottom: 30px;
+}
+
+.btn-primary:hover {
+	background-color: #0056b3;
+	border-color: #0056b3;
+}
+
+/* footer {
+	background-color: #343a40;
+	color: #ffffff;
+	padding: 20px 0;
+	margin-top: 80px;
+	text-align: center;
+} */
+
+@media (max-width: 767.98px) {
+	.banner h1 {
+		font-size: 36px;
+	}
+
+	.contact {
+		padding: 40px 0;
+	}
+
+	.contact h2 {
+		margin-bottom: 20px;
+	}
+}
+button[type="submit"] {
+	/* background-color: #007bff;
+	border-color: #007bff; */
+	padding: 10px 20px;
+	font-size: 18px;
+	font-weight: bold;
+	border-radius: 5px;
+}
+button[type="submit"]:hover {
+	background-color: #0056b3;
+	border-color: #0056b3;
+}
+/* input::placeholder {
+  opacity: 0;
+}
+p.message {
+	color: rgba(128, 131, 131, 0.5);
+	opacity: 0.2;
+} */

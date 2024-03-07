@@ -1,0 +1,103 @@
+
+/* .destinations {
+	background-color: #cccccc;
+	padding: 100px 0;
+} */
+
+.destinations h1 {
+	font-size: 48px;
+	font-weight: bold;
+	margin-bottom: 30px;
+    display: flex; /* Ajout de la propriété display: flex */
+	align-items: center; /* Centrer verticalement */
+	justify-content: center; /* Centrer horizontalement */
+} 
+
+.destination {
+	background-color: #ffffff;
+	border: 1px solid #cccccc;
+	padding: 20px;
+	margin-bottom: 30px;
+	text-align: center;
+}
+
+ .destination h3 {
+	font-size: 24px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.destination img {
+	max-width: 100%;
+	height: auto;
+	margin-bottom: 20px;
+}
+
+.destination p {
+	font-size: 18px;
+	margin-bottom: 20px;
+}
+
+.destination .btn-primary {
+	background-color: #c023ab;
+	border-color: #c023ab;
+	margin-top: 20px;
+} 
+.destination {
+	border: 2px solid #ccc;
+	padding: 20px;
+	margin-bottom: 30px;
+	position: relative;
+  }
+  
+  .destination:hover {
+	border-color: #007bff;
+  }
+  
+  .destination img {
+	max-width: 100%;
+	max-width: 100%;
+	transition: opacity 0s ease-in-out;
+  }
+  
+  .destination h3 {
+	margin-top: 0;
+  }
+  
+  .btn-primary {
+	background-color: #007bff;
+	border-color: #007bff;
+  }
+  
+  .btn-primary:hover {
+	background-color: #0062cc;
+	border-color: #0062cc;
+  }
+  
+  .btn-primary:focus, .btn-primary.focus {
+	box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
+  }
+  
+  .btn-primary.disabled, .btn-primary:disabled {
+	background-color: #007bff;
+	border-color: #007bff;
+  }
+  
+  .btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active,
+  .show > .btn-primary.dropdown-toggle {
+	background-color: #0062cc;
+	border-color: #0062cc;
+  }
+  
+  .btn-primary:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled).active:focus,
+  .show > .btn-primary.dropdown-toggle:focus {
+	box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
+  }
+  /* .destination img {
+	max-width: 100%;
+	transition: opacity 0.3s ease-in-out;
+  } */
+  
+  .destination:hover img {
+	opacity: 0.8;
+  }

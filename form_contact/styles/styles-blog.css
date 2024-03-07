@@ -1,0 +1,167 @@
+
+.blog {
+    padding: 50px !important;
+    background-color: #0A1C2A;
+}
+.banner {
+	height: 500px;
+	background-size: cover;
+	background-position: center;
+	position: relative;
+}
+
+
+.banner h1 {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: #ccc;
+	font-size: 48px;
+	font-weight: bold;
+	text-align: center;
+	/* z-index: 2; */
+}
+
+.blog .post {
+    margin-bottom: 50px;
+    background-color: #fff;
+    padding: 30px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.blog .post img {
+    width: 100%;
+    margin-bottom: 20px;
+    border: 2px solid #ccc;
+}
+
+.blog .post h2.post-title {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.blog .post p.post-meta {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.blog .post p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.blog .post a.btn {
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 0;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.blog .post a.btn:hover {
+    background-color: #0056b3;
+}
+
+.blog .sidebar {
+    background-color: #fff;
+    padding: 30px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+ .blog .sidebar h2.sidebar-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.blog .sidebar ul.list-unstyled {
+    margin-bottom: 20px;
+}
+
+.blog .sidebar ul.list-unstyled li a {
+    font-size: 18px;
+    color: #555;
+    transition: color 0.1s ease;
+}
+
+.blog .sidebar ul.list-unstyled li a:hover {
+    color: #333;
+}
+
+.blog .sidebar ul.social {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.blog .sidebar ul.social li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.blog .sidebar ul.social li a {
+    font-size: 24px;
+    color: #333;
+    transition: color 0.1s ease;
+}
+
+.blog .sidebar ul.social li a:hover {
+    color: #222;
+}
+/* .blog.sidebar {
+    position: fixed;
+    top: 100px;
+    overflow-y: auto;
+} */
+.blog .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.blog {
+  display: grid;
+  /* grid-template-columns: 1fr 1fr;
+  grid-template-areas: "main sidebar"; */
+}
+
+.blog .col-lg-8 {
+  grid-area: main;
+}
+
+.blog .col-lg-4 {
+  grid-area: sidebar;
+  position: sticky;
+  top: 20px;
+  /* height: fit-content; */
+  margin-left: 30px;
+}
+.post:hover,
+.sidebar a:hover {
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  transform: translateY(5px);
+}
+
+.post-title:hover,
+.sidebar-title:hover {
+  color: #ff4500;
+}
+/* ----------------------------- */
+.post,
+.sidebar a {
+  transition: all 0.1s ease-in-out;
+}
+/* .post:hover .img-fluid {
+    transform: rotate(10deg);
+  } */
+  

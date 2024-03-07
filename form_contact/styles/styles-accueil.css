@@ -1,0 +1,490 @@
+.carousel {
+  width: 85%;
+  margin: 0 auto;
+  }
+  .carousel-inner img {
+    width: 100%;
+    height: auto;
+  }
+  .fa-angle-left,
+  .fa-angle-right {
+    position: absolute;
+    top: 50%;
+    z-index: 0;
+    display: inline-block;
+    
+  }
+  
+  .fa-angle-left {
+    left: -70px;
+  }
+  
+  .fa-angle-right {
+    right: -70px;
+  }
+  .carousel-item {
+		height: 500px;
+		text-align: center;
+		background-size: cover;
+		background-position: center;
+		position: relative;
+		}
+
+		.carousel-item::before {
+		content: "";
+		display: block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0,0,0,0.2);
+		}
+
+		.carousel-item h5 {
+		color: #f8f8f8;
+		font-size: 3rem;
+		font-weight: bold;
+		margin-top: 150px;
+		}
+
+		.carousel-item p {
+		color: #eee;
+		font-size: 1.5rem;
+		margin-top: 20px;
+		}
+
+		/* Style des images */
+
+		.carousel-item img {
+		height: 500px;
+		width: 100%;
+		object-fit: cover;
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 4;
+		}
+  
+.banner{
+  position: relative;
+  z-index: 0;
+}
+.destinations{
+  position: relative;
+  z-index: 0;
+}
+.stats{
+  position: relative;
+  z-index: 0;
+  /* clear: both; */
+}
+.testimonials{
+  position: relative;
+  z-index: 0;
+}
+.services{
+  position: relative;
+  z-index: 0;
+}
+.main{
+  position: relative;
+  z-index: 0;
+}
+
+
+.stats .section-title{
+  margin-top: -20px !important;
+  font-weight: bold;
+  color: #007bff;
+  text-align: center;
+  text-decoration: underline;
+}
+.show {
+  opacity: 1;
+  transition: opacity 1s;
+}
+
+.hover {
+  transform: rotateY(0deg);
+}
+
+.grow {
+  transform: scale(1.15); 
+}
+
+
+.testimony.active {
+  opacity: 1;
+  z-index: 3;
+}
+.testimony {
+  transition: 0.1s;
+}
+
+/* .testimony:hover {
+  transform: translateY(5px); 
+  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+.testimony:hover .testimony-author {
+  color: #333;
+  text-shadow: 0 1px 1px rgba(255,255,255,0.5);
+}
+
+.testimony:hover .quote {
+  color: #333;
+}
+
+.testimony:hover .quote::before {
+  color: #007bff;
+}
+
+.testimony:hover .quote::after {
+  color: #007bff;
+} */
+/* --------------------------------------------------------------------------------------------------------------------- */
+.stat {
+  transition: transform 0.5s ease-in-out; 
+}
+.stat:hover {
+  transform: scale(1.05); 
+}
+.stat:hover {
+  box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.8);
+}
+/* .stat {
+  opacity: 0;
+  transform: scale(0.9);
+} */
+/* .stat.show {
+  opacity: 2;  
+  transform: scale(1);    
+  transition: all 0.2s ease-out;
+} */
+.banner .btn{
+    /* margin: 30px; */
+    /* display: flex; Ajout de la propriété display: flex */
+    align-items: center; /* Centrer verticalement */
+    justify-content: center;
+}
+.banner .btn a{
+  font-size: 1.2rem; /* Augmente la taille du texte */
+  padding: 12px 24px; /* Ajoute de l'espace autour du texte */
+}
+
+.stats {
+    /* background-color: #fafafa; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* color: #fff; */
+    text-align: center;
+    padding-top:  50px;
+    }
+    
+    .card {
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+    margin-bottom: 50px;
+    }
+    .stats .card{
+      background-color: #ccc !important;
+    }
+    .card-title {
+    font-size: 22px;
+    font-weight: 100;
+    text-transform: uppercase;
+    text-decoration: underline;
+    color: #007bff;
+    margin-bottom: 5serpx !important;
+    }
+    
+    .stats .card-text {
+    color: #000;
+    font-size: 20px;
+    margin-bottom: 3px;
+    }
+    
+    .card:not(:last-child) {
+    margin-bottom: 30px;
+    }
+    
+    @media (min-width: 768px) {
+    .card {
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    }
+    
+    .card-body {
+    flex: 1;
+    }
+    .card-body span{
+      color: black;
+    }
+    }
+    .testimonials .card {
+        border-radius: 10px;
+        padding: 3px;
+    }
+    .testimonials h2{
+      font-weight: bold;
+      text-align: center;
+      text-decoration: underline;
+    }
+    /* .testimonials .row:first-of-type {
+        margin-bottom: 50px;
+    } */
+    @media (max-width: 767px) {
+        .banner {
+          text-align: center;
+        }
+      }
+      
+      .banner .title {
+        -webkit-animation: fadeIn 1s; /* Safari, Chrome and Opera > 12.1 */
+        -moz-animation: fadeIn 1s; /* Firefox < 16 */
+        -ms-animation: fadeIn 1s; /* Internet Explorer */
+        -o-animation: fadeIn 1s; /* Opera < 12.1 */
+        animation: fadeIn 1s;
+      }
+      
+      @keyframes fadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
+      }
+      
+      @-webkit-keyframes fadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
+      }
+      .btn {
+        -webkit-animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+        animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;  
+      }
+      
+      @keyframes shake {
+        10%, 90% {
+          transform: translate3d(-1px, 0, 0);
+        }
+        
+        20%, 80% {
+          transform: translate3d(2px, 0, 0);
+        }
+      
+        30%, 50%, 70% {
+          transform: translate3d(-4px, 0, 0);
+        }
+      
+        40%, 60% {
+          transform: translate3d(4px, 0, 0);
+        }
+      }
+
+      /* ----------------------------------------------------------------------------------------------------------------------------------------------- */
+
+      /* Center services section */
+.services .row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.service {
+  background-color: #f8f9fa;
+  border: 5px solid #cccccc;
+  padding: 30px;
+  text-align: center;
+  margin-bottom: 30px;
+  width: 360px;
+  height: 300px;
+}
+
+.service i {
+  font-size: 40px;
+  margin-bottom: 20px;  
+  /* color: #0d6efd; */
+}
+  
+.service h3 {
+  font-size: 25px;
+  font-weight: 600;  
+  margin-bottom: 10px; 
+}
+
+/* .service p {
+  font-size: 16px;
+  color: #666;
+} */
+
+@media(min-width: 768px) {
+  .service {
+    height: 250px;
+  }
+}
+
+@media(max-width: 767px) {
+  .service {
+    margin-bottom: 30px;
+  }
+}
+/* Ajouter une couleur de fond pour les icônes dans les services :
+css
+Copy  */
+.service i {
+  background-color: #007bff;
+  color: #ffffff;
+  border-radius: 50%;
+  font-size: 36px;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+ /* Ajouter des ombres sur les services pour créer un effet de profondeur : 
+css
+Copy  */
+.service {
+  background-color: #007bff;
+  border: 1px solid #007bff;
+  padding: 20px;
+  margin-bottom: 30px;
+  margin-top: 10px;
+  text-align: center;
+  box-shadow: 0px 0px 10px rgba(19, 105, 204, 0.5);
+}
+/* Ajouter une animation de survol sur les services pour créer une interaction :
+Copy  */
+.service:hover {
+  transform: translateY(-10px);
+  transition: all 0.1s ease-in-out;
+}
+/* Modifier la couleur d'arrière-plan du bouton "En savoir plus" :
+Copy  */
+.service .btn-primary {
+  background-color: #ffffff;
+  color: #007bff;
+  border: 2px solid #007bff;
+}
+ /* Modifier la couleur du texte de la barre de navigation lorsqu'elle est survolée :
+Copy  */
+.navbar-nav .nav-link:hover {
+  color: #007bff;
+}
+
+.services {
+  background-color: #0A1C2A;
+  padding-top: 70px;
+}
+.services .card-body {
+
+    /* justify-content: center; */
+    /* height: auto; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+.services h3 {
+  color: #000 !important;
+    /* justify-content: center; */
+    /* height: auto; */
+
+}
+
+/* Ajouter une bordure arrondie sur les cartes de témoignages :
+Copy  */
+.card {
+  border-radius: 10px;
+}
+.service:first-child .fas {
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+/* Ajouter des animations pour les titres et les textes des services :
+Vous pouvez ajouter des animations pour les titres et les textes des services pour les rendre plus dynamiques. Voici un exemple de code CSS pour ajouter une animation de zoom sur le titre du premier service :
+
+css
+Copy */
+.service h3{
+	animation: zoom 0.2s ease-in-out;
+}
+
+@keyframes zoom {
+	0% { transform: scale(1); }
+	50% { transform: scale(1.2); }
+	100% { transform: scale(1); }
+}
+
+.service p{
+  /* font-family: 'Roboto', sans-serif; */
+  font-size: 18px;
+
+}
+/* Largeur du bloc */
+@media(min-width: 992px){
+  .service {
+    width: 360px;
+    height: 300px;
+  }  
+}
+.service h3{   
+  font-size: 25px;   
+  font-weight: 200;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-decoration: underline;  /* Souligne le texte */
+}
+
+.service h2{  
+  text-decoration: none;    /* Supprime la soulignement */    
+  border-bottom: 3px solid #2581DC; /* Ajoute une bordure dessous */    
+  padding-bottom: 5px;   /* Espacement entre le texte et la bordure */  
+}
+
+
+/* Styling for services section */
+.services {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.service {
+  border: 1px solid #007bff;
+  margin-bottom: 30px;
+  padding: 20px;
+}
+
+.service h2 {
+  font-weight: bold;
+  margin-top: 0;
+}
+
+.service p {
+  margin-bottom: 0;
+}
+
+/* Media queries for responsive design */
+@media (max-width: 767px) {
+  .service {
+    margin-bottom: 20px;
+  }
+  .stats .card{
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width: 768px) {
+  .service {
+    margin-right: 20px;
+    margin-bottom: 20px;
+  }
+  .stats .card{
+    margin-right: 20px;
+    margin-bottom: 20px;
+  }
+
+  .service:nth-child(3n+0) {
+    margin-right: 0;
+  }
+  .stats .card{
+    margin-right: 0;
+  }
+}

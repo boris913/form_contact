@@ -1,0 +1,35 @@
+footer {
+    background-color: #333;
+    padding: 50px 0;
+}
+
+footer .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .social-icons {
+    margin-top: 20px;
+}
+
+@media (min-width: 768px) {
+    footer .container {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    footer .col-md-3 {
+        width: 25%;
+    }
+
+    footer .social-icons {
+        margin-top: 0;
+    }
+
+    footer .text-right {
+        text-align: right;
+    }
+}
